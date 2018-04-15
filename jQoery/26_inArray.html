@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>		
+		<script>
+			$(document).ready(function(){
+				var breads = ['pretzel','donuts','rolls','croissant'];
+				$('#checkButton'),click(function(){
+				var bread = $(':text').val();
+				if($.inArray(bread,breads) != -1){
+				 $('#feedback').html('<span style="color: red">');
+				}else
+				});
+			});			
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+		Bread: <input type="text" id="bread">
+		<button id="checkButton">Check bread</button>
+		
+		<p id="feedback"></p>
+	</body>
+</html>

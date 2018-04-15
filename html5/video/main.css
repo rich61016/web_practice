@@ -1,0 +1,43 @@
+#skin{
+	border:3px dotted steelblue;
+    border-radius:10px;
+	width:700px;
+	text-align:center; /* 內容對齊 */
+	padding:10px 0px;
+	margin:10px auto;
+}
+nav{
+	/* border:1px solid red; */
+	margin-top:10px;
+}
+button{
+	border-radius:25px;
+	width:100px;
+	height:35px;
+	font-family: Comic Sans MS;
+	font-size:18px;
+	box-shadow:	#9999FF 5px 6px 5px ;
+}	
+#buttons{
+	margin:0 auto;
+    margin-right:10px;
+    float:center;
+}		   
+#defaultBar{
+	border:1px solid #aaa;
+	border-radius:25px;
+	width:560px;
+	height:16px;
+	margin:10px auto;
+	padding:2px;
+	float:center;
+	box-shadow:	#9999FF 5px 6px 5px ;
+}	  
+#progressBar{
+	width:0px;
+	height:16px;
+	background:#ccc;
+}
+
+
+

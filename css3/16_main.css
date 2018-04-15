@@ -1,0 +1,20 @@
+#box{ 
+font: bold 36px Tahoma;
+	border:1px solid #3D579D;
+	width: 250px;
+	height: 100px;
+	text-align:center;
+	line-height:100px;
+	margin:100px auto;
+	color:#fff;
+	text-shadow:#000 0px 0px 8px;
+	transform:translate(50px,100px) rotate(30deg) scale(2,0.8) skewX(30deg);/* 斜切+縮放+旋轉+移動 */
+	/* transform:skew(30deg,30deg); *//* 斜切 */
+	/* transform:scale(2,0.8); *//* 縮放 */
+	/* transform:rotate(30deg); *//* 旋轉 */
+	/* transform:translate(50px,0px); *//* 移動 */
+}
+
+
+
+

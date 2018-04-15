@@ -1,0 +1,40 @@
+*{
+	margin:1px;
+	font-family:Tahoma;
+	list-style:none;
+}
+
+fieldset{
+	width:800px;
+	border-style:dotted;
+	border-color:#77FFEE;
+	margin:10px;
+}
+h1{
+	text-transform:capitalize;
+}
+legend:first-letter{
+	text-decoration:underline;
+}
+legend{
+	font-weight:bold;
+	color:blue;
+}
+label{
+	font-weight:bold;
+	
+}
+input{
+	border-top:solid black;
+    border-right:solid blue;
+    border-bottom:solid blue;
+    border-left:solid black;
+	background:#77DDFF;
+	float:right;
+}
+span{
+	border: 1px solid;
+	background-color:#66FFFF;
+	color: blue;
+	padding:3px;
+}

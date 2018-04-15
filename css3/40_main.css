@@ -1,0 +1,42 @@
+#box{
+	width:200px;
+	height:200px;	
+}
+#text{
+	height:100px;
+	background:red;
+}
+#image{
+	width:100%;
+	height:100px;
+	overflow:hidden;
+	position:relative;
+}
+#image img{
+	width:200px;
+	height:100px;
+	margin:0px;
+	transition:1s;
+}
+#image img:hover{
+	width:250px;
+	height:150px;
+	margin:-25px 0px 0px -25px;
+}
+#image:before{
+	content:'';
+	width:0px;
+	height:0px;
+	border:1px solid #aaa;
+	position:absolute;
+	left:96px;
+	top:48px;
+	transition:1s;
+}
+#image:hover:before{
+	width:186px;
+	height:86px;
+	border:1px solid #222;
+	left:5px;
+	top:5px;
+}

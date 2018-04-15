@@ -1,0 +1,45 @@
+#box{ /* 盒子的陰影 */
+	font: bold 50px Tahoma;
+	border:1px solid red;
+	width:300px;
+	text-align:center;
+	margin:50px auto;
+	/* box-shadow:rgba(255,0,0,0.3) 10px 10px 20px; */ /* 顏色暈開 */
+	box-shadow:rgb(255,0,0) 10px 10px,blue 20px 20px;/* 多層陰影 */
+	text-shadow:rgb(255,0,0) 4px 5px 5px;/* 文字陰影 */
+}
+#boxmore{
+	font: bold 40px Tahoma;
+	width:300px;
+	text-align:center;
+	margin:50px auto;
+	background:#ccc;
+	/* box-shadow:red 25px 0px; */ /* 盒子的X，Y陰影 */
+	box-shadow:red 25px 0px inset;/* 內部陰影 */
+}
+#bigbox{
+	font: bold 40px Tahoma;
+	width:300px;
+	text-align:center;
+	margin:50px auto;
+	border:1px solid red;
+}
+#bigbox p:nth-child(1){
+	color:white;
+	text-shadow:rgb(255,0,0) 0px 0px 5px;/* 文字四邊陰影 */
+}
+#bigbox p:nth-child(2){
+	color:white;
+	text-shadow:rgb(255,0,0) 0px 0px 5px,blue 0px 0px 5px;/* 文字四邊混合陰影 */
+}
+#bigbox p:nth-child(3){
+	color:white;
+	text-shadow:rgb(255,0,0) -10px -10px 10px,blue 10px 10px 10px;
+}
+
+
+
+
+
+
+

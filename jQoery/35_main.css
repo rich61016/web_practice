@@ -1,0 +1,17 @@
+#sliderBoard{
+	width:100%;
+	height:300px;
+	position:relative;
+}
+#sliderBoard div.scrollableArea *{
+	float:left;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	display:block;
+}
+.image{
+	width:400px;
+	height:280px;
+	border:1px solid #ccc;
+}

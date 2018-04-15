@@ -1,0 +1,27 @@
+@font-face{/* 下載字型 */
+	font-family:SABRINA;
+	src:url(fonts/SABRINA_.TTF);
+}
+#box{ 
+font: normal 36px SABRINA;
+	border:1px solid #3D579D;
+	width: 250px;
+	height: 100px;
+	text-align:center;
+	line-height:100px;
+	margin:100px auto;
+	color:#3D579D;
+	/* text-shadow:#000 0px 0px 8px; */
+	
+	transition:width 2s,transform 5s, background 3s,color 3s,font-size 2s; /* 轉場+控速 */
+}
+#box:hover{/* 滑鼠移過去 */
+	width:450px;
+	transform:rotate(3600deg);/* 旋轉(角度) */
+	background:#3D579D;
+	color:#fff;
+	font-size:50px;/* 字變大 */
+}
+
+
+

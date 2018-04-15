@@ -1,0 +1,24 @@
+#box{ 
+	font: bold 40px Tahoma;
+	/* border:1px solid red; */
+	width: 350px;
+	height: 200px;
+	
+	text-align:center;
+	line-height:200px;
+	margin:50px auto;
+	
+	color:#fff;
+	text-shadow:#000 0px 0px 8px;/* 文字陰影 */
+	/* background:yellow; */
+	/* background-image:radial-gradient(yellow,green); *//* 放射狀漸層 */
+	/* background:-webkit-radial-gradient(center,circle,yellow,green);/* 中心放射漸層 */ 
+	   background:-webkit-radial-gradient(left,ellipse,yellow,green);/* 從左開始放射漸層 */
+	/* background:-webkit-radial-gradient(left,ellipse,red 20%, yellow 50%, blue 80%); *//* 從左開始放射漸層 */
+	/* background:-webkit-repeating-radial-gradient(top,red 15%, blue 20%); *//* 重複漸層 */
+}
+
+
+
+
+

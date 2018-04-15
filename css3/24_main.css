@@ -1,0 +1,17 @@
+@keyframes slide{
+	0%{margin-left:0px;}
+	20%{margin-left:200px;}
+	40%{margin-left:500px;}
+	60%{margin-left:600px;}
+	80%{margin-left:800px;}
+	100%{margin-left:1000px;}
+	
+}
+img{
+	animation-name:slide;
+	animation-duration:2s;/* 執行時間 */
+	animation-iteration-count:3;/* 執行次數 */
+	animation-direction:alternate;
+}
+
+

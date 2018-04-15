@@ -1,0 +1,23 @@
+@font-face{/* 下載字型 */
+	font-family:SABRINA;
+	src:url(fonts/SABRINA_.TTF);
+}
+#box{ 
+     width:200px;
+	 height:200px;
+	 background:#ccc;
+
+
+	
+	transition:width 2s 0s,
+	           height 2s 2s,
+			   background 2s 4s;
+}
+#box:hover{/* 滑鼠移過去 拉長拉寬*/
+	width:400px;
+	height:400px;
+	background:#666;
+}
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>		
+		<script>
+			$(document).ready(function(){
+			/*$('.textHover').mousemove(function(e){
+			  $('#theDiv').text('X: '+e.clientX+' Y: '+e.clientY);
+                });*/
+              
+              $('.textHover').mousemove(function(e){
+                var theText = $(this).attr('hovertext');
+			  $('#theDiv').text(theText).show().css({
+                   left: e.clientX +15,
+                   top: e.clientY +15
+                  });
+                }).mouseout(function(){
+                   $('#theDiv').hide();
+                  });
+			    });			
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+	  	<p>
+			<a href="http://www.google.com.tw" class="textHover" hovertext="Google, a powerful search engine.">Google</a> | 
+			<a href="http://www.cafepress.com/" class="textHover" hovertext="cafepress is the world's best online gift shop.">cafepress</a> | 
+			<a href="http://www.bbc.com/news" class="textHover" hovertext="BBC Trust publishes response to public consultation.">BBC</a>
+		</p>
+		<p>
+			<img src="../img/limes.jpg" class="textHover" hovertext="Very fresh limes...">
+		</p>
+		<div id="theDiv"></div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>		
+		<script>
+			$(document).ready(function(){
+				$(':text').focus(function(){
+				 $(this).css('backgroundColor', 'yellow');
+				});
+				
+				<!-- $('input[type="email"]').attr().focus().blur(); -->
+				<!-- $('input[type="email"]').attr().focus(function(){}).blur(function(){}); -->
+				$('input[type="email"]').attr('placeholder','Enter your email').focus(function(){
+				  $(this).attr('placeholder','').css('backgroundColor', 'yellow');
+				}).blur(function(){
+				   $(this).css('backgroundColor', 'transparent');
+				   
+				   if($(this).val() == ''){
+				      $(this).attr('placeholder','example@abc.com')
+				   }
+				});
+			});			
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+	  <form>
+		<p class="silvia">
+			<label for="name">username : </label>
+			<input type="text" name="name" id="name" placeholder="your name">
+		</p>
+		<p class="silvia">
+			<label for="email">email : </label>
+			<input type="email" name="email" id="email">
+		</p>
+		<p class="silvia">
+			<label>confirm email : </label>
+			<input type="email">
+		</p>
+		<input type="submit" value="Submit">
+	  </form>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>	
+		<script>
+			$(document).ready(function(){
+			$('#imgBoard').hover(function(){
+           
+                $(this).animate({
+                   left: '0px',
+                   backgroundColor:'red'
+                 },1000,'easeInQuart');
+              },function(){
+                  $(this).animate({
+                   left: '-135px'
+                },1500,'easeOutBounce');
+              });
+			});			
+		</script>
+		<title>jQuery</title>
+	</head>
+	<body>
+		<h2>Mouseover the gray stripe on the left edge.</h2>
+		<div id="imgBoard">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+			<img src="../img/pikachu.JPG" class="myPhoto">
+		</div>
+	</body>
+</html>

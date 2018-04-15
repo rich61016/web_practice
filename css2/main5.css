@@ -1,0 +1,28 @@
+div{
+	font:bold 70px Tahoma;
+	    position:absolute;
+}
+.myClass{
+	
+	color:red;
+    
+	top:105px;
+	left:103px;
+	z-index:15;
+		}
+.myClass2{
+	
+	color:green;
+    
+	top:100px;
+	left:100px;
+	z-index:10;
+		}	
+.myClass3{
+	
+	color:blue;
+    
+	top:95px;
+	left:97px;
+	z-index:5;
+		}	

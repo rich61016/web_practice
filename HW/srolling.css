@@ -1,0 +1,14 @@
+@keyframes slide {
+  0% { left: 0;top: 0; transition: transform 10s;}
+  50% {left: 200px;top: 150px;}
+  100% {left: 300px;top: 0; transform: rotate(3600deg);}
+  
+}
+
+.box {
+  position: absolute;
+  animation-name:slide;
+	animation-duration:2s;
+	animation-iteration-count:2;
+	animation-direction:alternate;
+}

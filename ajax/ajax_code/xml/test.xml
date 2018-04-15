@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<myWeb>
+	<display-name>My AJAX Web</display-name>
+	<file-list>
+		<myFile title="index">&lt;index.jsp&gt;</myFile><br/>
+		<myFile>ajaxFirst.html</myFile>
+		<myFile>getParameter.html</myFile>
+		<myFile>new.js</myFile>
+		<myFile>style.css</myFile>
+	</file-list>
+	<data-source></data-source>
+</myWeb>

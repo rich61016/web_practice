@@ -1,0 +1,36 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+input{
+	position:absolute; /* 定位 */
+	opacity:0; /* 透明 */
+}
+label{
+	display:block;/* 上到下排列 */	
+}
+.outer{
+	display:inline-block;/* 從左排到右 */
+	width:40px;
+	height:20px;
+	border:1px solid #aaa;
+	vertical-align:middle;/* 垂直對齊 */
+	background:transparent;
+	border-radius:21px;/* 半徑 */
+}
+.inner{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	border:1px solid #aaa;
+	border-radius:10px;
+	background:#fff;
+	position:relative;
+}
+input:checked+.outer{
+	background:#0fa;
+}
+input:checked+.outer .inner{
+	left:20px;
+}

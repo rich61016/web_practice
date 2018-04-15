@@ -1,0 +1,20 @@
+#box{ 
+font: bold 36px Tahoma;
+	border:1px solid #3D579D;
+	width: 250px;
+	height: 100px;
+	text-align:center;
+	line-height:100px;
+	margin:100px auto;
+	color:#fff;
+	text-shadow:#000 0px 0px 8px;
+	
+	transition:width 2s,transform 2s; /* 轉場+控速 */
+}
+#box:hover{/* 滑鼠移過去 */
+	width:450px;
+	transform:rotate(3600deg);/* 旋轉(角度) */
+}
+
+
+

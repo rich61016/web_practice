@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery plugin--Adipoli</title>
+		
+		<link rel="stylesheet" href="css/facebox.css">	
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/facebox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('a').facebox({
+				  loadingImage: '../img/pikachu.png',
+				  closeImage: '../img/pikachu.png'
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<a href="../img/pikachu.jpg">皮卡丘</a>
+	</body>
+</html>

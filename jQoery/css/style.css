@@ -1,0 +1,82 @@
+/* 3_slidedown.html */
+#clickMe{
+	border: 2px dashed maroon;
+	width: 280px;
+	height: 40px;
+	font: bold 18px Tahoma;
+	text-align: center;
+	line-height: 40px;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+#content{
+	border: 2px dashed maroon;
+	width: 280px;
+	height:280px;
+	
+	display: none;
+}
+#content img{
+	width: 280px;
+	height:280px;
+}
+
+/* 7_addclass.html +8_removeClass.html+14_bind_on.html*/
+.highlight{
+	background: yellow;
+}
+.textHover{
+    cursor:pointer;
+}
+#theDiv{
+    font:14px;
+    border:1px solid #ccc;
+    color:red;
+    padding:5px;
+    position:absolute;
+    display:none;
+    background:white;
+}
+#topMessage{
+background:#777;
+color:#ccc;
+font:20px Tahoma;
+text-align:center;
+width:600px;
+padding:15px;
+display:none;
+margin:0px auto;
+}
+
+#imgBoard{
+width:100px;
+background:#aaa;
+padding:10px 35px;
+position:absolute;
+left:-135px;
+}
+.myPhoto{
+width:100px;
+height:90px;
+}
+#inCenter{
+	width:200px;
+	height:200px;
+	background:#aaa;
+	position:absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

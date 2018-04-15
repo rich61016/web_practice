@@ -1,0 +1,34 @@
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	
+}
+#calendar{
+	border:1px solid red;
+	width:364px;
+	margin:100px auto;
+}
+#week li,#day li{
+    width:50px;
+	height:50px;
+    border:1px solid blue;	
+	float:left;
+	
+}
+#week li{
+	text-align:center;
+	line-height:50px;
+}
+#day li{
+	background:#ccc;
+}
+#day li:empty{
+	background:transparent;
+}
+#week li:nth-child(1),#week li:nth-child(7){
+	color:red;
+}
+#day li:nth-child(7n),#day li:nth-child(7n+1){
+	color:red;
+}

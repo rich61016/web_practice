@@ -1,0 +1,10 @@
+#skin{
+	column-count:5;/* 多欄位排版 */
+	column-rule:5px dotted #aaa;
+	column-gap:25px;
+}
+
+h1,p:last-child{/* 最後一個P */
+	column-span:all;
+	text-align:center;
+}

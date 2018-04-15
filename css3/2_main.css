@@ -1,0 +1,29 @@
+#parent{
+	border:1px solid red;
+	width:100px;
+}
+/* #parent p[name="pika"]{
+	color:red;
+} */
+/* #parent p:nth-child(2){
+	color:red;
+} */
+p:nth-child(odd){
+	color:red;
+}
+/* buttons */
+input[type="submit"],input[type="reset"],input[type="button"],button{
+	width:100px;
+	text-transform:capitalize;
+	color:steelblue;
+}
+/* hyperlink */
+/* a[href*="google.com"]{
+	color:red;
+} */
+/* a[href^="https://"]{
+	color:red;
+} */
+a[href$=".pdf"]{
+	color:red;
+}

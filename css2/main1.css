@@ -1,0 +1,16 @@
+.myclass{
+	font:bold 70px Tahoma;
+	color:red;
+    position:absolute;
+	top:100px;
+	left:100px;
+	z-index:10;
+		}
+.myclass2{
+	font:bold 70px Tahoma;
+	color:green;
+    position:absolute;
+	top:100px;
+	left:100px;
+	z-index:10;
+		}	

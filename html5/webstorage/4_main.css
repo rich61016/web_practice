@@ -1,0 +1,8 @@
+label{
+	width:80px;
+	float:left;
+}
+label,button{
+	text-transform:capitalize;
+	font:normal 18px Tahoma;
+}

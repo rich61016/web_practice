@@ -1,0 +1,25 @@
+#box{ 
+	font: bold 40px Tahoma;
+	/* border:1px solid red; */
+	width: 350px;
+	height: 200px;
+	
+	text-align:center;
+	line-height:200px;
+	margin:50px auto;
+	
+	color:#fff;
+	text-shadow:rgb(255,0,0) 0px 0px 5px;/* 文字陰影 */
+	/* background:yellow; */
+	/* background:linear-gradient(yellow,green); *//* 上到下背景線性漸層 */
+	/* background:-webkit-linear-gradient(left,yellow,green); *//* 左到右背景線性漸層 */
+/* 	background:-webkit-linear-gradient(left top,yellow,green); *//* 左上角背景線性漸層 */
+     /* background:-webkit-linear-gradient(角度DEG ,起始顏色 ,位置 節速顏色 位置); */
+	/* background:-webkit-linear-gradient(180deg,red 20%, yellow 50%, blue 80%); *//* 從右開始線性漸層 */
+	background:-webkit-repeating-linear-gradient(top,red 15%, blue 20%);/* 重複漸層 */
+}
+
+
+
+
+

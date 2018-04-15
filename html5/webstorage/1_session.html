@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="">
+		
+		<title>session</title>
+    </head>
+	<body>
+	  <button onclick="showMessage();">show</button>
+	  
+	  <script>
+        function showMessage(){
+		    if(sessionStorage['book'] == null){
+			    var bookName = prompt('what');
+				sessionStorage['book'] = bookName;
+			}else{
+			   alert(sessionStorage['book']);
+			}
+		}	  
+	  </script>
+	</body>
+	</html>

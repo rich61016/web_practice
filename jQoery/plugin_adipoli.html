@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery plugin--Adipoli</title>
+		
+		<link rel="stylesheet" href="css/adipoli.css">	
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/jquery.adipoli.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.image').adipoli({
+					'startEffect'   : 'overlay',
+					//'hoverEffect'   : 'boxRainGrow',
+					'hoverEffect'   : 'popout',
+					'slices'        : 6,
+					'animSpeed'     : 1500,
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<img src="../images/washDrawing/013.JPG" class="image">
+	</body>
+</html>

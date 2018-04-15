@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery first</title>
+		<link rel="stylesheet" href="">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#loadButton').click(function(){
+				//	$('#feedback').load('index.html');
+				//	$('#feedback').load('jsp/index.jsp');
+					$('#feedback').load('jsp/useParameter.jsp',{name:'Anan',age:13});
+				});
+				
+				$('#getButton').click(function(){
+					$.get('jsp/useParameter.jsp',{name:'Anan',age:13},function(data){
+						$('#feedback').html('<h2>'+data+'</h2>');
+					});
+				});
+				$('#postButton').click(function(){
+					$.post('jsp/useParameter.jsp',{name:'Anan',age:13},function(data){
+						$('#feedback').html('<h2>'+data+'</h2>');
+					});
+				});
+				$('#getJSONButton').click(function(){
+					$.getJSON('json/78mm.json',{},function(data){
+						var myData = data.features[0].geometry.geometries[0].coordinates[0];						
+					//	console.log(myData);
+					//	console.log(data.features[0].geometry.geometries[0].coordinates[0]);
+					for(var index=0;index<myData.length;index++){
+						console.log(myData[index]);
+					}
+						
+						//	console.log(data.features[0].geometry.geometries[0].coordinates[0][0]);
+						
+						//for(var i=0;i<data.length;i++){
+						//	$('#feedback').append('<h2>'+data[i].Variety+'</h2>');
+						//	console.log(data[i].ParkName);
+						//}
+					});
+				});
+				$('#ajaxButton').click(function(){
+				//	$.ajax({});
+					$.ajax({
+						url: 'jsp/useParameter.jsp',
+						type: 'POST',
+						data: {name:'Anan',age:13},
+						dataType: 'text',		//text,JSON,XML
+						success: function(data){
+							$('#feedback').html('<h2>'+data+'</h2>');
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="loadButton">Load</button>
+		<button id="getButton">Get</button>
+		<button id="postButton">Post</button>
+		<button id="getJSONButton">GetJSON</button>
+		<button id="ajaxButton">Ajax</button>
+		<p id="feedback"></p>
+	</body>
+</html>
